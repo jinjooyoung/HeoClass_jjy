@@ -41,8 +41,20 @@ public class ExPlayer : MonoBehaviour
         {
             point = 0;                                  //충돌이 일어났을 때 포인트를 0으로 만든다.
             gameObject.transform.position = new Vector3(0.0f, 3.0f, 0.0f);      //충돌하였을 때 위치 초기화
-            Debug.Log(collision.gameObject.name);       //해당 오브젝트의 이름을 출력한다
+            Debug.Log(collision.gameObject.tag);       //해당 오브젝트의 이름을 출력한다
 
+        }
+    }
+
+    //콜라이더 컴포넌트에 is trigger 를 체크하면 충돌 물리효과는 없어지지만 닿은것을 확인 할 수 있음
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Item"))       //CompareTag 함수는지어진 Tag(Item) 이름을 검사한다.
+        {
+            Debug.Log("아이템과 출동함.");
+            point += 10;                    //10점 포인트를 올린다. point = point + 10의 줄임표현
+            Destroy(other.gameObject);      //파괴한다.
         }
     }
 }
