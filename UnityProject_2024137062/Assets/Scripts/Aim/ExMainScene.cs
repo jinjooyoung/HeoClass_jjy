@@ -16,6 +16,6 @@ public class ExMainScene : MonoBehaviour
     // Update is called once per frame
     public void GoToGame()
     {
-        SceneManager.LoadScene("Scenes04_12_shoot");             //게임 씬으로 들어간다.
+        SceneManager.LoadScene("Game_Scene");             //게임 씬으로 들어간다.
     }
 }
