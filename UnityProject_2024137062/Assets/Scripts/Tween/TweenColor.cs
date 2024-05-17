@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class TweenColor : MonoBehaviour
 {
-    private Renderer renderer;
+   /* private Renderer renderer;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +29,5 @@ public class TweenColor : MonoBehaviour
 
             renderer.material.DOPlay();                                 //설정된 트윈을 실행
         }
-    }
+    }*/
 }

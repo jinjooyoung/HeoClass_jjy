@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 7948490986637242937}
   - component: {fileID: 5260372755014915622}
   m_Layer: 0
-  m_Name: CircleObject
-  m_TagString: Untagged
+  m_Name: CircleObject_01
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,3 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDrag: 0
   isUsed: 0
+  index: 1
